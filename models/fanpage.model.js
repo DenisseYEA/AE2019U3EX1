@@ -20,6 +20,6 @@ let fanpageSchema = new mongoose.Schema({
   }]
 });
 
-const fanpageModel = mongoose.model('Product', fanpageSchema, 'products');
+const fanpageModel = mongoose.model('Fanpage', fanpageSchema, 'fanpages');
 
 module.exports = fanpageModel;

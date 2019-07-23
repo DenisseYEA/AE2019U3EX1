@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
 module.exports = (wagner) => {
-    const fanpageCtrl = wagner.invoke((Product) => require("../controllers/fanpage.controller")(Product));
+    const fanpageCtrl = wagner.invoke((Fanpage) => require("../controllers/fanpage.controller")(Fanpage));
 
     router.post("/",(req,res) => {
         fanpageCtrl.createFanpage(req,res);

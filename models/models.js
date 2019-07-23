@@ -8,10 +8,10 @@ module.exports = (wagner) => {
 
     wagner.factory('db',()=>mongoose);
 
-    const Product = require("./fanpage.model");
+    const Fanpage = require("./fanpage.model");
 
     const models = {
-        Product
+        Fanpage
     }
 
     _.each(models, (v, k) => {
